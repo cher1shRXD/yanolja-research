@@ -1,4 +1,6 @@
-export const SLIDES = [
+import { Slide } from "@/types/slide";
+
+export const SLIDES: Slide[] = [
   {
     id: 1,
     content: "Vol.33 K-의료관광의 현황과 질적 성장 전략",

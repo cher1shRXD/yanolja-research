@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import NavItem from "./NavItem"
-import Language from "./Language"
+import NavItem from "../atoms/NavItem"
+import Language from "../widgets/Language"
 
 const Header = () => {
   return (

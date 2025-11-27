@@ -7,9 +7,9 @@ import "swiper/css/effect-cards";
 import Link from "next/link";
 import { SLIDES } from "@/constants/slides";
 import { useCardSwiper } from "@/hooks/useCardSwiper";
-import SwiperIndicator from "./SwiperIndicator";
+import SwiperIndicator from "./widgets/SwiperIndicator";
 
-export default function CardSwiper() {
+const Slide = () => {
   const {
     activeIndex,
     handlePrev,
@@ -75,4 +75,6 @@ export default function CardSwiper() {
       />
     </div>
   );
-}
+};
+
+export default Slide;

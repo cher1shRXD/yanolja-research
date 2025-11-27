@@ -1,7 +1,7 @@
 "use client";
 
 import { SHORTCUTS } from "@/constants/shortcuts";
-import ShortcutItem from "./ShortcutItem";
+import ShortcutItem from "./atoms/ShortcutItem";
 
 const Shortcuts = () => {
   return (
