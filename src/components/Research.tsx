@@ -1,25 +1,23 @@
 "use client";
 
-import { Swiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import SectionTitle from "./common/SectionTitle";
-import { Autoplay, FreeMode, Scrollbar } from "swiper/modules";
-import { BRIEFES } from "@/constants/brief";
-import { SwiperSlide } from "swiper/react";
-import BriefItem from "./atoms/BriefItem";
-import "swiper/css/scrollbar";
 import ScrollController from "./widgets/ScrollController";
+import { Autoplay, FreeMode, Scrollbar } from "swiper/modules";
+import { RESEARCHES } from "@/constants/research";
+import ResearchItem from "./atoms/ResearchItem";
 import { useCardSwiper } from "@/hooks/useCardSwiper";
 
-const Brief = () => {
+const Research = () => {
   const { onSwiper, handleNext, handlePrev } = useCardSwiper();
 
   return (
-    <div className="w-[930px] relative">
-      <SectionTitle title="인사이트 / 브리프" href="#" />
+    <div className="w-full relative">
+      <SectionTitle title="연구보고서" href="#" />
       <ScrollController type="prev" onClick={handlePrev} />
       <Swiper
-        slidesPerView={3.15}
-        spaceBetween={8}
+        slidesPerView={4.5}
+        spaceBetween={40}
         freeMode={true}
         scrollbar={{
           hide: false,
@@ -28,9 +26,9 @@ const Brief = () => {
         onSwiper={onSwiper}
         modules={[FreeMode, Autoplay, Scrollbar]}
         className="scroll-swiper">
-        {BRIEFES.map((brief) => (
-          <SwiperSlide key={brief.id}>
-            <BriefItem data={brief} />
+        {RESEARCHES.map((research, idx) => (
+          <SwiperSlide key={idx}>
+            <ResearchItem data={research} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -39,4 +37,4 @@ const Brief = () => {
   );
 };
 
-export default Brief;
+export default Research;

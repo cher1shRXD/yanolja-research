@@ -6,6 +6,7 @@
   --color-border: #D9D9D9;
   --color-black: #1B1716;
   --color-light-gray: #999999;
+  --color-bg-variation: #F5EBE1;
 }
 
 @font-face {
@@ -84,7 +85,6 @@
   font-family: "Pretendard", sans-serif;
 }
 
-/* Card Swiper */
 .card-swiper {
   width: 930px;
   max-width: 1200px;
@@ -111,12 +111,11 @@
   border-radius: 30px;
 }
 
-/* Brief Swiper */
-.brief-swiper {
-  padding-bottom: 40px !important;
+.scroll-swiper {
+  padding-bottom: 52px !important;
 }
 
-.brief-swiper .swiper-scrollbar {
+.scroll-swiper .swiper-scrollbar {
   left: 0 !important;
   width: 100% !important;
   height: 2px !important;
@@ -124,12 +123,11 @@
   border-radius: 2px !important;
 }
 
-.brief-swiper .swiper-scrollbar-drag {
+.scroll-swiper .swiper-scrollbar-drag {
   background: #1b1716 !important;
   border-radius: 2px !important;
 }
 
-/* Report Swiper */
 .report-swiper {
   width: 250px !important;
 }

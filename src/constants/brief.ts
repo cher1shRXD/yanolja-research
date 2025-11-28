@@ -1,6 +1,6 @@
 import { Brief } from "@/types/brief";
 
-export const BRIEF: Brief[] = [
+export const BRIEFES: Brief[] = [
   {
     id: 1,
     title: "Vol.10 2025년 1~9월 인바운드·아웃바운드 관광 실적 분석",
